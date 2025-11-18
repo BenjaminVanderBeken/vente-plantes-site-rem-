@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · Celosia Planta</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <a href="index.html" class="logo" aria-label="Retour à l'accueil">🌿 Celosia Planta</a>
+  </div>
+  <nav aria-label="Navigation principale">
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link">Accueil</a></li>
+      <li><a href="catalogue.html" class="nav-link">Catalogue</a></li>
+      <li><a href="conseils.html" class="nav-link">Conseils</a></li>
+      <li><a href="apropos.html" class="nav-link">À&nbsp;propos</a></li>
+      <li><a href="contact.html" class="nav-link btn">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <header class="page-header">
+    <h1>Contact</h1>
+    <p>Une question ? Écrivez‑nous.</p>
+  </header>
+
+  <section class="contact-section">
+    <form class="contact-form" action="#" method="post">
+      <fieldset>
+        <legend>Vos coordonnées</legend>
+        <label for="nom">Nom</label>
+        <input id="nom" name="nom" type="text" placeholder="Votre nom" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="nom@exemple.com" required>
+
+        <label for="tel">Téléphone</label>
+        <input id="tel" name="tel" type="tel" placeholder="+32 000 00 00" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Votre demande</legend>
+        <label for="sujet">Sujet</label>
+        <select id="sujet" name="sujet" required>
+          <option value="" selected disabled>Choisir un sujet</option>
+          <option value="commande">Suivi de commande</option>
+          <option value="produit">Question produit</option>
+          <option value="autre">Autre</option>
+        </select>
+
+        <div class="radios">
+          <span>Urgence :</span>
+          <label><input type="radio" name="urgence" value="faible" checked> Faible</label>
+          <label><input type="radio" name="urgence" value="moyenne"> Moyenne</label>
+          <label><input type="radio" name="urgence" value="haute"> Haute</label>
+        </div>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Expliquez votre besoin" required></textarea>
+
+        <div class="checkboxes">
+          <label><input type="checkbox" name="rgpd" required> J’accepte que mes données soient utilisées pour traiter ma demande.</label>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+    <aside class="contact-aside">
+      <h2>Infos</h2>
+      <p>Réponse sous 24–48h (jours ouvrés).</p>
+      <img src="images/placeholder.png" alt="Feuilles vertes">
+    </aside>
+  </section>
+</main>
+
+<footer>
+  <section class="footer-grid">
+    <article>
+      <h3>Celosia Planta</h3>
+      <p>Vente de plantes d’intérieur et accessoires, éco‑responsable.</p>
+    </article>
+    <article>
+      <h3>Liens</h3>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="conseils.html">Conseils</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </article>
+    <aside>
+      <h3>Newsletter</h3>
+      <form action="#" method="post" class="newsletter">
+        <label for="email-news">Votre email</label>
+        <input id="email-news" name="email-news" type="email" placeholder="nom@exemple.com" required>
+        <button type="submit">S’inscrire</button>
+      </form>
+    </aside>
+  </section>
+  <p class="legal">© 2025 Celosia Planta — Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>

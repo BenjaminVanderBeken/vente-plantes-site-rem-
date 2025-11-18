@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catalogue · Celosia Planta</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <a href="index.html" class="logo" aria-label="Retour à l'accueil">🌿 Celosia Planta</a>
+  </div>
+  <nav aria-label="Navigation principale">
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link">Accueil</a></li>
+      <li><a href="catalogue.html" class="nav-link">Catalogue</a></li>
+      <li><a href="conseils.html" class="nav-link">Conseils</a></li>
+      <li><a href="apropos.html" class="nav-link">À&nbsp;propos</a></li>
+      <li><a href="contact.html" class="nav-link btn">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <header class="page-header">
+    <h1>Catalogue</h1>
+    <p>Toutes nos plantes (prix fictifs).</p>
+  </header>
+
+  <section class="filters" aria-label="Filtres de catalogue">
+    <form class="filters-form" action="#" method="get">
+      <label for="cat">Catégorie</label>
+      <select id="cat" name="cat">
+        <option value="">Toutes</option>
+        <option value="faciles">Faciles</option>
+        <option value="purifiantes">Purifiantes</option>
+        <option value="succulentes">Succulentes</option>
+      </select>
+
+      <span class="price-range">
+        <label for="min">Prix min</label>
+        <input id="min" type="number" name="min" min="0" step="1" placeholder="0">
+        <label for="max">Prix max</label>
+        <input id="max" type="number" name="max" min="0" step="1" placeholder="100">
+      </span>
+      <button type="submit">Filtrer</button>
+    </form>
+  </section>
+
+  <section class="grid-products">
+    <article class="card">
+      <img src="images/Monstera deliciosa.png" alt="Monstera deliciosa">
+      <h2>Monstera deliciosa</h2>
+      <p>Plante graphique et robuste.</p>
+      <p class="price">€ 32</p>
+      <button class="btn">Ajouter au panier</button>
+    </article>
+
+    <article class="card">
+      <img src="images/Sansevieria.webp" alt="Sansevieria laurentii">
+      <h2>Sansevieria</h2>
+      <p>Très tolérante, idéale débutants.</p>
+      <p class="price">€ 18</p>
+      <button class="btn">Ajouter au panier</button>
+    </article>
+
+    <article class="card">
+      <img src="images/Pilea.jpg" alt="Pilea peperomioides">
+      <h2>Pilea</h2>
+      <p>Feuilles rondes originales.</p>
+      <p class="price">€ 22</p>
+      <button class="btn">Ajouter au panier</button>
+    </article>
+
+    <article class="card">
+      <img src="images/Ficus elastica.jpg" alt="Ficus elastica">
+      <h2>Ficus elastica</h2>
+      <p>Feuillage brillant.</p>
+      <p class="price">€ 28</p>
+      <button class="btn">Ajouter au panier</button>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <section class="footer-grid">
+    <article>
+      <h3>Celosia Planta</h3>
+      <p>Vente de plantes d’intérieur et accessoires, éco‑responsable.</p>
+    </article>
+    <article>
+      <h3>Liens</h3>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="conseils.html">Conseils</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </article>
+    <aside>
+      <h3>Newsletter</h3>
+      <form action="#" method="post" class="newsletter">
+        <label for="email-news">Votre email</label>
+        <input id="email-news" name="email-news" type="email" placeholder="nom@exemple.com" required>
+        <button type="submit">S’inscrire</button>
+      </form>
+    </aside>
+  </section>
+  <p class="legal">© 2025 Celosia Planta — Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
