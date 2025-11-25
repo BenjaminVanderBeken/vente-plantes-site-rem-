@@ -1,7 +1,9 @@
 🌿 Celosia Plantes
 Site web vitrine pour une boutique de vente de plantes d'intérieur. Projet réalisé en HTML5 et CSS3.
+
 📋 Description
 Celosia Plantes est un site e-commerce fictif proposant des plantes d'intérieur avec des conseils d'entretien personnalisés. Le site met en avant une approche éco-responsable avec des producteurs locaux et des emballages recyclés.
+
 🗂️ Structure du projet
 celosia-plantes/
 ├── index.html          # Page d'accueil
@@ -13,8 +15,10 @@ celosia-plantes/
 │   ├── style.css       # Styles principaux
 │   └── Responsive.css  # Media queries
 └── images/             # Images du site
+
 🖥️ Pages du site
 PageDescriptionAccueilHero section avec mise en avant des avantages (éco-responsable, livraison, conseils)CatalogueGrille de 4 plantes avec filtres (catégorie, prix) et fiches détailléesConseils3 guides d'entretien : arrosage, lumière, rempotageÀ proposHistoire de l'entreprise et engagementsContactFormulaire complet avec validation
+
 🎨 Technologies utilisées
 HTML5
 
@@ -98,7 +102,7 @@ PlantePrixMonstera deliciosa15 €Sansevieria8 €Pilea10 €Ficus elastica15 �
 
 Cloner le dépôt :
 
-bashgit clone https://github.com/votre-repo/celosia-plantes.git
+bashgit clone https://github.com/BenjaminVanderBeken/vente-plantes-site-rem-
 
 Ouvrir index.html dans un navigateur
 
