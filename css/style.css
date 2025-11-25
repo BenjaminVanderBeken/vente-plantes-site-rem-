@@ -13,31 +13,32 @@
 
 * { box-sizing: border-box; }
 
-html { font-size: 100%; } /* base à 100% pour respecter la consigne */
+html { font-size: 100%; } 
 body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   line-height: 1.4;
-  color: #102A27;
-  background: #F5FAF8;
+  color: #a19a3c;
+
 }
 
-/* ========== Layout global en rem ========== */
+/*Définit la largeur à 100% pour header, main, footer */
 header, main, footer { width: 100%; }
 main { padding: var(--space-m) 1.5rem; }
 
-/* Header (Flexbox) */
+/*En-tête et navigation(Flexbox) */
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: var(--space-s) 1.5rem;
-  background: #E7F3EF;
+  background: #0E3B2E;
   position: sticky;
   top: 0;
   z-index: 100;
 }
-.logo { font-weight: 700; text-decoration: none; color: #20a920; font-size: 1.4rem; }
+.logo { font-weight: 700; text-decoration: none; color: #ffffff; font-size: 1.4rem; }
+/*Liste de navigation en Flexbox horizontal avec espacement*/
 .nav-list {
   list-style: none;
   display: flex;
@@ -45,12 +46,13 @@ header {
   margin: 0;
   padding: 0;
 }
-.nav-link { text-decoration: none; color: #0E3B2E; padding: 0.5rem 1rem; border-radius: var(--radius); }
-.nav-link:hover, .nav-link:focus { background: #d9ece6; outline: none; }
+/*Liens de navigation avec hover(survol) et bouton principal*/
+.nav-link { text-decoration: none; color: #ffffff; padding: 0.5rem 1rem; border-radius: var(--radius); }
+.nav-link:hover, .nav-link:focus { background: #b9d5cc; outline: none; }
 .nav-link.btn { background: #0E8F6B; color: #fff; }
 .nav-link.btn:hover { filter: brightness(110%); }
 
-/* Hero (Grid) */
+/*Grid à 2 colonnes (55% et 40%) pour texte + image */
 .hero {
   display: grid;
   grid-template-columns: 55% 40%;
@@ -61,7 +63,7 @@ header {
 .hero-content h1 { font-size: 2.2rem; margin: 0 0 var(--space-s); }
 .hero-content p { font-size: 1.1rem; margin-bottom: var(--space-m); }
 .hero-visual img { width: 100%; height: auto; border-radius: var(--radius); }
-
+/*Styles génériques pour tous les boutons (padding, couleurs, bordures arrondies)*/
 .btn, button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -72,8 +74,11 @@ header {
   text-decoration: none;
   cursor: pointer;
 }
+.btn:hover, button:hover {
+  filter: brightness(110%);
+}
 
-/* Features (Grid) */
+/*Grid de 3 colonnes égale*/
 .features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -82,11 +87,17 @@ header {
 .feature { background: #fff; padding: var(--space-m); border-radius: var(--radius); box-shadow: 0 0 0.5rem rgba(0,0,0,0.05); }
 .feature h2 { margin-top: 0; font-size: 1.3rem; }
 
-/* Page header */
+/* en-tête de page*/
 .page-header { margin-bottom: var(--space-m); }
 .page-header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
 
 /* Catalogue Grid (CSS Grid) */
+.grid-products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
 .filters-form {
   display: flex;
   flex-wrap: wrap;
@@ -98,10 +109,41 @@ header {
 .filters-form input, .filters-form select { padding: 0.5rem 0.75rem; border-radius: var(--radius); border: 1px solid #b9d5cc; background: #fff; }
 .filters-form button { padding: 0.5rem 1rem; }
 
-.grid-products {
+/* Conseils - Grid 3 colonnes */
+.tips {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  margin-bottom: var(--space-xl);
+}
+
+.tips .card {
+  background: #fff;
+  padding: 0;
+  border-radius: var(--radius);
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.tips .card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.tips .card h2 {
+  font-size: 1.2rem;
+  margin: var(--space-m) var(--space-m) var(--space-xs);
+}
+
+.tips .card p {
+  margin: 0;
+  padding: 0 var(--space-m) var(--space-m);
+  color: #5a6c68;
+  line-height: 1.5;
 }
 .card {
   background: #fff;
@@ -111,6 +153,19 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+}
+.grid-products .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+.grid-products .card {
+  display: flex;
+  flex-direction: column;
+}
+.grid-products .card .btn {
+  margin-top: auto;
 }
 .card img { width: 100%; height: auto; border-radius: var(--radius); }
 .card h2 { font-size: 1.2rem; margin: 0; }
@@ -137,12 +192,13 @@ header {
   box-shadow: 0 0 0.5rem rgba(0,0,0,0.05);
 }
 
-/* Contact (Grid + Form) */
+/* Contact (Grid + Form) Grid 60%/36% pour formulaire et encart*/
 .contact-section {
   display: grid;
   grid-template-columns: 60% 36%;
   gap: 2rem;
 }
+/*Styles du formulaire (inputs, selects, textarea)*/
 .contact-form {
   background: #fff;
   padding: var(--space-m);
@@ -163,54 +219,35 @@ header {
   border-radius: var(--radius);
   border: 1px solid #b9d5cc;
   background: #fff;
+  /*Disposition des radios, checkboxes et image*/
 }
 .radios { display: flex; gap: 2rem; align-items: center; margin: 1rem 0; }
 .checkboxes { margin-top: 1rem; }
 .contact-aside img { width: 100%; height: auto; border-radius: var(--radius); }
 
-/* Footer */
+/* Pied de page*/ 
 footer {
   padding: var(--space-l) 1.5rem var(--space-m);
   background: #0E3B2E;
   color: #E7F3EF;
 }
+/*Grid de 2 colonnes pour footer*/
 .footer-grid {
   display: grid;
-  grid-template-columns: 38% 28% 28%;
-  gap: 2rem;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: end;
 }
-footer a { color: #C9F0E6; text-decoration: none; }
-footer a:hover { text-decoration: underline; }
+footer a { color: #fff; text-decoration: none; }
+footer a:hover 
+{ text-decoration: underline; }
 footer .newsletter {
   display: grid;
-  grid-template-columns: 60% 38%;
-  gap: 1rem;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
 }
 footer .newsletter input, footer .newsletter button {
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 2rem;
 }
-.legal { text-align: center; margin-top: var(--space-m); opacity: .8; }
-
-/* ========== Responsive (Media queries) ========== */
-/* Mobile < 768px */
-@media (max-width: 768px) {
-  .nav-list { gap: 0.5rem; }
-  .hero { grid-template-columns: 100%; gap: 1.5rem; }
-  .features { grid-template-columns: 100%; gap: 1.5rem; }
-  .grid-products { grid-template-columns: 100%; }
-  .tips { grid-template-columns: 100%; }
-  .about-section { flex-direction: column; }
-  .contact-section { grid-template-columns: 100%; }
-  footer .newsletter { grid-template-columns: 100%; }
-}
-
-/* Tablette 768px–1024px */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .hero { grid-template-columns: 58% 38%; }
-  .features { grid-template-columns: repeat(2, 1fr); }
-  .grid-products { grid-template-columns: repeat(2, 1fr); }
-  .tips { grid-template-columns: repeat(2, 1fr); }
-  .contact-section { grid-template-columns: 58% 38%; }
-}
-
-/* Desktop > 1024px : déjà couvert par les valeurs par défaut */
+.legal { text-align: center; margin-top: var(--space-m); opacity: .8;
+ }

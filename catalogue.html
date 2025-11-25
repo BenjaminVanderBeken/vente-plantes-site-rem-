@@ -4,15 +4,16 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Catalogue · Celosia Planta</title>
+<title>Catalogue · Celosia Plante</title>
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/Responsive.css">
 
 </head>
 <body>
 
 <header>
   <div class="brand">
-    <a href="index.html" class="logo" aria-label="Retour à l'accueil">🌿 Celosia Planta</a>
+    <a href="index.html" class="logo" aria-label="Retour à l'accueil">Celosia Plantes</a>
   </div>
   <nav aria-label="Navigation principale">
     <ul class="nav-list">
@@ -28,7 +29,7 @@
 <main>
   <header class="page-header">
     <h1>Catalogue</h1>
-    <p>Toutes nos plantes (prix fictifs).</p>
+    <p>Toutes nos plantes</p>
   </header>
 
   <section class="filters" aria-label="Filtres de catalogue">
@@ -36,9 +37,9 @@
       <label for="cat">Catégorie</label>
       <select id="cat" name="cat">
         <option value="">Toutes</option>
-        <option value="faciles">Faciles</option>
-        <option value="purifiantes">Purifiantes</option>
-        <option value="succulentes">Succulentes</option>
+        <option value="Toxique pour les chats">Toxique pour les chats</option>
+        <option value="d'intérieurs">d'intérieurs</option>
+        <option value="Ornementale">Ornementale</option>
       </select>
 
       <span class="price-range">
@@ -55,32 +56,65 @@
     <article class="card">
       <img src="images/Monstera deliciosa.png" alt="Monstera deliciosa">
       <h2>Monstera deliciosa</h2>
-      <p>Plante graphique et robuste.</p>
-      <p class="price">€ 32</p>
+   <ul>
+        <li>Période de floraison: non:</li>
+        <li>Exposition: Mi-ombragé</li>
+        <li>Fréquence d'arrosage: Modéré</li>
+        <li>Hauteur à maturité: 3 m</li>
+        <li>Rusticité: 0°C (gelif) </li>
+        <li>Vitesse de croissance: rapide</li>
+      </ul>
+
+      <p class="price">€ 15</p>
       <button class="btn">Ajouter au panier</button>
     </article>
 
     <article class="card">
       <img src="images/Sansevieria.webp" alt="Sansevieria laurentii">
       <h2>Sansevieria</h2>
-      <p>Très tolérante, idéale débutants.</p>
-      <p class="price">€ 18</p>
+      <ul>
+        <li>Période de floraison: Août</li>
+        <li>Exposition: ensoleillé,Mi-ombragé</li>
+        <li>Fréquence d'arrosage:Faible</li>
+        <li>Hauteur à maturité: 1 m</li>
+        <li>Rusticité:0°C (gélif)</li>
+        <li>Vitesse de croissance:lent</li>
+        <li>Toxique pour les animaux</li>
+      </ul>
+
+      <p class="price">€ 8</p>
       <button class="btn">Ajouter au panier</button>
     </article>
 
     <article class="card">
       <img src="images/Pilea.jpg" alt="Pilea peperomioides">
       <h2>Pilea</h2>
-      <p>Feuilles rondes originales.</p>
-      <p class="price">€ 22</p>
+      <ul>
+        <li>Période de floraison: : non</li>
+        <li>Exposition: Mi-ombragé</li>
+        <li>Fréquence d'arrosage: Modéré</li>
+        <li>Hauteur à maturité:</li>
+        <li>Rusticité: 0°C </li>
+        <li>Vitesse de croissance: Rapide</li>
+      </ul>
+
+      <p class="price">€ 10</p>
       <button class="btn">Ajouter au panier</button>
     </article>
 
     <article class="card">
-      <img src="images/Ficus elastica.jpg" alt="Ficus elastica">
+      <img src="images/Ficus Elastica 2.webp" alt="Ficus elastica">
       <h2>Ficus elastica</h2>
-      <p>Feuillage brillant.</p>
-      <p class="price">€ 28</p>
+      <ul>
+        <li>Période de floraison: :</li>
+        <li>Exposition: Mi-ombragé</li>
+        <li>Fréquence d'arrosage: Modéré</li>
+        <li>Hauteur à maturité:1m50 </li>
+        <li>Rusticité: Climat tempéré 15-20°</li>
+        <li>Vitesse de croissance: Modéré</li>
+      </ul>
+
+      <p class="price">€ 15</p>
       <button class="btn">Ajouter au panier</button>
     </article>
   </section>
@@ -89,29 +123,19 @@
 <footer>
   <section class="footer-grid">
     <article>
-      <h3>Celosia Planta</h3>
-      <p>Vente de plantes d’intérieur et accessoires, éco‑responsable.</p>
-    </article>
-    <article>
-      <h3>Liens</h3>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="catalogue.html">Catalogue</a></li>
-        <li><a href="conseils.html">Conseils</a></li>
-        <li><a href="apropos.html">À propos</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <h3>Celosia Plantes</h3>
+      <p>Vente de plantes d’intérieur et accessoires.</p>
     </article>
     <aside>
       <h3>Newsletter</h3>
       <form action="#" method="post" class="newsletter">
         <label for="email-news">Votre email</label>
-        <input id="email-news" name="email-news" type="email" placeholder="nom@exemple.com" required>
+        <input id="email-news" name="email-news" type="email" placeholder="Celosiaplantets@gmail.be" required>
         <button type="submit">S’inscrire</button>
       </form>
     </aside>
   </section>
-  <p class="legal">© 2025 Celosia Planta — Tous droits réservés.</p>
+  <p class="legal">© 2025 Celosia Plantes — Tous droits réservés.</p>
 </footer>
 
 </body>

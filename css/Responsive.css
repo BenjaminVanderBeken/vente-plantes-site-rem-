@@ -1,0 +1,21 @@
+/* Responsive Media queries */
+/* Mobile < 768px */
+@media (max-width: 768px) {
+  .nav-list { gap: 0.5rem; }
+  .hero { grid-template-columns: 100%; gap: 1.5rem; }
+  .features { grid-template-columns: 100%; gap: 1.5rem; }
+  .grid-products { grid-template-columns: 100%; }
+  .tips { grid-template-columns: 100%; }
+  .about-section { flex-direction: column; }
+  .contact-section { grid-template-columns: 100%; }
+  footer .newsletter { grid-template-columns: 100%; }
+}
+
+/* Tablette 768px–1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero { grid-template-columns: 58% 38%; }
+  .features { grid-template-columns: repeat(2, 1fr); }
+  .grid-products { grid-template-columns: repeat(2, 1fr); }
+  .tips { grid-template-columns: repeat(2, 1fr); }
+  .contact-section { grid-template-columns: 58% 38%; }
+}
