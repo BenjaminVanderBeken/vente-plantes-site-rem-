@@ -36,13 +36,48 @@ Contact : 60% 36%
 
 Unités relatives (rem) pour une meilleure accessibilité
 
-Responsive Design
-Trois breakpoints :
+📱 Responsive Design
+Le site est entièrement responsive et s'adapte automatiquement aux différentes tailles d'écran :
+AppareilBreakpointAdaptationDesktop> 1024pxAffichage complet avec toutes les fonctionnalitésTablette768px - 1024pxLayout adapté pour une consultation confortableMobile< 768pxNavigation optimisée et contenu réorganisé
+<details>
+<summary>🎯 Clique pour en savoir plus</summary>
+Breakpoints CSS
+css/* Mobile < 768px */
+@media (max-width: 768px) { ... }
 
-Mobile (< 768px) : colonnes empilées
-Tablette (768px - 1024px) : grilles à 2 colonnes
-Desktop (> 1024px) : layout complet
+/* Tablette 768px–1024px */
+@media (min-width: 768px) and (max-width: 1024px) { ... }
+Adaptations par section
 
+Hero : Passe de 2 colonnes (55%/40%) à 1 colonne
+Catalogue : 4 → 2 → 1 colonne(s)
+Conseils : 3 → 2 → 1 colonne(s)
+Contact : Formulaire et aside empilés sur mobile
+
+</details>
+🎯 Choix techniques
+ChoixDescriptionHTML5 sémantiqueUtilisation des balises appropriées (header, nav, main, section, article, aside, footer)CSS purAucune dépendance externe, pas de frameworkArchitecture modulaireCSS organisé en fichiers logiques et réutilisablesMobile-firstApproche responsive prioritaire
+<details>
+<summary>🌐 Clique pour en savoir plus</summary>
+Variables CSS
+css:root {
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-s: 0.75rem;
+  --space-m: 1rem;
+  --space-l: 1.5rem;
+  --space-xl: 2rem;
+  --radius: 0.5rem;
+}
+Layouts utilisés
+
+Flexbox : Navigation, page À propos
+CSS Grid : Hero, catalogue, conseils, contact, footer
+
+</details>
+🌐 Compatibilité navigateurs
+Le site est compatible avec :
+NavigateurSupportChrome/Edge✅ Dernières versionsFirefox✅ Dernières versionsSafari✅ Dernières versionsOpera✅ Dernières versions
 📝 Formulaires
 Page Contact
 
@@ -68,12 +103,7 @@ bashgit clone https://github.com/votre-repo/celosia-plantes.git
 Ouvrir index.html dans un navigateur
 
 Aucune dépendance externe requise.
-📱 Compatibilité
-
-Chrome, Firefox, Safari, Edge (versions récentes)
-Responsive : mobile, tablette, desktop
-
 📄 Licence
 © 2025 Celosia Plantes — Tous droits réservés.
 
-Projet réalisé dans le cadre d'un cours de développement web
+Projet réalisé dans le cadre d'un cours de développement web.
